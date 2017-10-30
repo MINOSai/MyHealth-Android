@@ -15,12 +15,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/cardView"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/cardView">
+        android:layout_marginTop="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -124,18 +124,20 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
 
@@ -144,6 +146,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:text="Today's menu"
                 android:textColor="@android:color/black"
@@ -153,9 +156,10 @@
 
             <com.alorma.timeline.RoundTimelineView
                 android:id="@+id/timeline1"
-                android:layout_width="?android:listPreferredItemHeight"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView11"
@@ -165,9 +169,10 @@
 
             <com.alorma.timeline.RoundTimelineView
                 android:id="@+id/timeline2"
-                android:layout_width="?android:listPreferredItemHeight"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/timeline1"
                 app:timeline_indicatorSize="7dp"
@@ -176,10 +181,10 @@
 
             <com.alorma.timeline.RoundTimelineView
                 android:id="@+id/timeline3"
-                android:layout_width="?android:listPreferredItemHeight"
+                android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginStart="8dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/timeline2"
                 app:timeline_indicatorSize="7dp"
@@ -191,6 +196,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="Breakfast"
                 android:textColor="@android:color/black"
@@ -203,10 +209,60 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="Oats, Orange juice, sandwich"
                 app:layout_constraintLeft_toRightOf="@+id/timeline1"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Lunch"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@+id/timeline2"
+                app:layout_constraintTop_toTopOf="@+id/timeline2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="One bowl of rice, 2 varities of veggies"
+                app:layout_constraintLeft_toRightOf="@+id/timeline2"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Supper"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toRightOf="@+id/timeline3"
+                app:layout_constraintTop_toTopOf="@+id/timeline3" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:text="Couple of roti with dal"
+                app:layout_constraintLeft_toRightOf="@+id/timeline3"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
         </android.support.constraint.ConstraintLayout>
 
