@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Monday"
+        android:text="Wednesday"
         android:textColor="@android:color/black"
         android:textSize="24sp" />
 
@@ -25,5 +25,5 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView14"
         android:layout_marginTop="8dp"
-        android:text="Oct 31, 2017" />
+        android:text="Nov 1, 2017" />
 </RelativeLayout>
