@@ -78,10 +78,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_diet) {
-            intent = new Intent(MainActivity.this, ActivityWorkout.class);
+            intent = new Intent(MainActivity.this, DietActivity.class);
         } else if (id == R.id.nav_workout) {
-            intent = new Intent(MainActivity.this, ActivityWorkout.class);
-        } else if (id == R.id.nav_task) {
             intent = new Intent(MainActivity.this, ActivityWorkout.class);
         } else if (id == R.id.nav_overview) {
             intent = new Intent(MainActivity.this, MainActivity.class);
